@@ -2,7 +2,7 @@
   "name": "artofspite",
   "version": "1.0.0",
   "description": "portfolioProject",
-  "main": "index.js",
+  "main": "index.html",
   "dependencies": {
     "bootstrap": "^4.5.0",
     "jquery": "^3.5.1",
