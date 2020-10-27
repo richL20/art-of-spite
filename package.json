@@ -1,0 +1,29 @@
+{
+  "name": "artofspite",
+  "version": "1.0.0",
+  "description": "portfolioProject",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richL20/art-of-spite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/richL20/art-of-spite/issues"
+  },
+  "homepage": "https://github.com/richL20/art-of-spite#readme"
+}
