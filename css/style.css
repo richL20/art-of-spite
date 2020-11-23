@@ -5,18 +5,22 @@ html {
 }
 
 a {
-  color: whitesmoke!important;
+  color: whitesmoke !important;
 }
-a:hover{
+
+a:hover {
   text-decoration: none;
 }
 
 p {
   margin: 0;
-  color: whitesmoke;
-  font-size: 18px;
+  color: ghostwhite;
+  font-size: 20px;
   padding: 12px;
   font-family: 'Poppins', sans-serif;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  text-rendering: optimizeLegibility !important;
+  letter-spacing: 1px;
 
 }
 
@@ -103,23 +107,28 @@ section {
 .about h1,
 .accordian h1 {
   color: black;
-  font-family: 'IM Fell Double Pica SC', serif;
+  font-family: 'IM Fell Double Pica', serif;
 
 }
 
 .about h2,
 .accordian h2 {
   color: gray;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Marcellus', serif;
   letter-spacing: 2px;
   font-size: 2.5em;
-  font-weight: 400;
+  font-weight: normal;
 
 }
 
-.about hr,
-.gallery hr {
-  border-top: 1px solid darkred/**rgba(255, 255, 255, .2);**/
+hr {
+  border-top: 1px solid darkred
+    /**rgba(255, 255, 255, .2);**/
+}
+
+.contact hr {
+  border-top: 1px solid rgba(255, 255, 255, .2);
+
 }
 
 /**header**/
@@ -128,7 +137,7 @@ header {
   width: 100%;
   height: 100vh;
   background: linear-gradient(rgba(16, 29, 44, .60), rgba(16, 29, 44, .65)),
-  url(../img/caddy.jpg) center no-repeat;
+    url(../img/caddy.jpg) center no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -150,7 +159,7 @@ header > .container {
 }
 
 .hero-text h1 {
-  font-family: 'IM Fell Double Pica SC', serif;
+  font-family: 'IM Fell Double Pica', serif;
   color: whitesmoke;
   animation: sink 1.65s ease-in;
   transition: opacity 650ms;
@@ -160,7 +169,7 @@ header > .container {
 
 .hero-text h2 {
   text-transform: uppercase;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Marcellus', serif;
   color: whitesmoke;
   font-size: 20px;
   letter-spacing: 2px;
@@ -170,7 +179,7 @@ header > .container {
 
 .btn {
   width: 100px;
-  padding: 6px 0!important;
+  padding: 6px 0 !important;
   border: 1px solid rgb(230, 32, 32);
   position: relative;
   overflow: hidden;
@@ -203,9 +212,10 @@ header > .container {
 
 
 /**accordian**/
-.fa{
-  float:right;
+.fa {
+  float: right;
 }
+
 .accordian {
   background-color: #e8e8e8;
 }
@@ -214,18 +224,18 @@ header > .container {
   font-size: 1.5em;
   color: black;
   padding: 10px;
-  margin:0 20px;
+  margin: 0 20px;
 
 }
 
 .panel-heading {
   background-color: #2c2c2c !important;
-  border-radius: 1px;
+  border-radius: 4px;
   height: 50px;
 }
 
 .accordion_icon {
-  color:whitesmoke;
+  color: whitesmoke;
 }
 
 #accordion {
@@ -236,8 +246,7 @@ header > .container {
 
 #headingOne {
   background-color: #008ecc;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-  text-rendering: optimizeLegibility !important;
+
 }
 
 .panel-body {
@@ -259,20 +268,9 @@ header > .container {
   font-size: 1.40em;
   line-height: 1.2em;
   color: #2c2c2c;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-  text-rendering: optimizeLegibility !important;
+
 }
 
-.panel-body ul {
-  display: inline-block;
-  text-align: left;
-  width: 70%;
-}
-
-.panel-body li {
-  font-size: 1.2em;
-  line-height: 1.65em;
-}
 
 /***gallery***/
 
@@ -291,12 +289,12 @@ header > .container {
 
 .gallery h1 {
   color: black;
-  font-family: 'IM Fell Double Pica SC', serif;
+  font-family: 'IM Fell Double Pica', serif;
 }
 
 .gallery h2 {
   color: ghostwhite;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Marcellus', serif;
   letter-spacing: 2px;
   font-size: 2.5em;
   font-weight: 400;
@@ -341,6 +339,7 @@ header > .container {
   .navbar-brand {
     max-width: 250px;
   }
+
   .hamburger-menu {
     top: 25px;
     right: 25px;
@@ -350,6 +349,8 @@ header > .container {
   .carousel-item img {
     border: 10px solid white;
   }
+
+
 
 }
 
@@ -378,24 +379,33 @@ header > .container {
   border: 10px solid white;
 }
 
+.mobile {
+  padding-top: 20px;
+}
+
 
 @media (min-width:992px) {
   .header > container {
     padding: 0 15px;
   }
+
   .hero-text h1 {
     font-size: 100px;
   }
+
   .hero-text h2 {
     font-size: 30px;
   }
+
   .hamburger-menu {
     display: none;
   }
+
   .navbar-brand {
     position: initial;
     transform: initial;
   }
+
   .nav-list {
     position: initial;
     width: initial;
@@ -408,18 +418,24 @@ header > .container {
     padding: 0;
     margin: 0;
   }
+
   .nav-item {
     margin: 0 30px;
   }
+
   .nav-item:last-child {
     margin-right: 0;
   }
+
   .nav-link {
     position: relative;
     padding: 0;
-    font-size: 18;
+    font-size: 20;
     text-transform: uppercase;
+    font-family: 'Marcellus', serif;
+    letter-spacing: 2px;
   }
+
   .nav-link::before {
     content: "";
     position: absolute;
@@ -432,11 +448,17 @@ header > .container {
     transform-origin: center;
     transition: transform 650ms;
   }
+
   .nav-link:hover::before {
     transform: scaleX(1);
   }
+
   .carousel-item img {
     border: 40px solid white;
+  }
+
+  .mobile {
+    padding-top: 0px;
   }
 
 }
@@ -452,6 +474,7 @@ header > .container {
     opacity: 0;
     transform: translateY(50px)
   }
+
   100% {
     opacity: 1;
     transform: translateY(0)
@@ -463,6 +486,7 @@ header > .container {
     opacity: 0;
     transform: translateY(-15px)
   }
+
   100% {
     opacity: 1;
     transform: translateX(0)
@@ -474,6 +498,7 @@ header > .container {
     opacity: 1;
     transform: scale(1);
   }
+
   100% {
     opacity: 0;
     transform: scale(1.2);
