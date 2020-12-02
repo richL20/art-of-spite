@@ -121,7 +121,7 @@ section {
 }
 
 hr {
-  border-top: 1px solid darkred
+  border-top: 2px solid darkred
     /**rgba(255, 255, 255, .2);**/
 }
 
@@ -181,7 +181,7 @@ header > .container {
 .btn {
   width: 100px;
   padding: 6px 0 !important;
-  border: 3px solid darkred;
+  border: 2px solid darkred;
   position: relative;
   overflow: hidden;
   animation: rise 1.65s ease-in;
