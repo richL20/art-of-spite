@@ -303,6 +303,8 @@ footer {
 	}
 	.navbar-brand h2{
 		font-size:1.25em;
-		padding-left:10px;
+		padding-left:0;
+		text-align:left;
 	}
+	
 }
