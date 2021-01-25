@@ -1,0 +1,308 @@
+/*=== Global ===*/
+
+html {
+	scroll-behavior: smooth;
+
+}
+
+body {
+	font-size: 1.2em;
+	line-height: 1.2em;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+.offset:before {
+	content: "";
+	height: 62px;
+	margin-top: -62px;
+	display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Marcellus', serif;
+	letter-spacing: 2px;
+
+}
+
+h1,
+h2 {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+}
+
+.heading {
+	text-align: center;
+	text-transform: uppercase;
+	color: whitesmoke;
+	padding-top: 2.5em;
+}
+
+.heading-underline {
+	width: 5rem;
+	height: .25rem;
+	background-color: whitesmoke;
+	margin: 1.0rem auto;
+
+}
+
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: darkred;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 10%;
+}
+
+#myBtn:hover {
+	background-color: crimson;
+
+}
+
+
+/*============= NAVIGATION =============*/
+
+.navbar-brand h2{
+	font-size:1.65em;
+	color: whitesmoke !important;
+	padding-left:100px;
+	
+
+}
+
+.navbar {
+
+	/**background-color:#000036;**/
+	background: linear-gradient(to bottom, black, #171717, black);
+	color: whitesmoke;
+	padding: .6rem 1rem;
+	font-size: 1.1rem;
+	letter-spacing: .1rem;
+	font-weight: 700;
+	text-transform: uppercase;
+
+
+}
+
+.navbar-nav li {
+	padding-right: .8rem;
+}
+
+.navbar-nav .nav-link {
+	padding-top: .8rem;
+	color: gainsboro;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+	color: darkred;
+	opacity.7;
+	transition: .7s;
+
+}
+
+#home .fas {
+	color: white;
+	font-size: 1.75rem;
+}
+
+/*===== landing =====*/
+
+.landing {
+	background-color: darkgray;
+	background-image: url(../img/car.jpg);
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	display: table;
+	width: 100%;
+	min-height: 100vh;
+
+	padding-top: 80px;
+	z-index: 2;
+	overflow: hidden;
+}
+
+.landing::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: black;
+	opacity: .8;
+	z-index: 1;
+}
+
+.caption {
+	color: whitesmoke;
+	top: 40%;
+	position: absolute;
+	text-align: left;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	z-index: 100;
+}
+
+/*===== skills =====*/
+
+#skills {
+	background: linear-gradient(to right bottom, #0f7764, rgb(10, 2, 59));
+	color: whitesmoke;
+	padding-bottom: 120px;
+	min-height: 100vh;
+
+}
+
+#skills p {
+	margin: 0 25px;
+}
+
+#skills li {
+	list-style: circle;
+	text-align: left;
+
+}
+
+#skills ul {
+	width: 80%;
+	margin: auto;
+}
+
+#skills .card {
+	background-color: none;
+	color: black
+}
+
+/*===== projects ====*/
+#projects {
+	background: linear-gradient(to right top, #0f7764, rgb(10, 2, 59));
+	padding-bottom: 100px;
+
+
+}
+
+.card {
+	background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+	border: none;
+}
+
+.card-footer {
+	background-color: black;
+}
+
+.btn-card {
+	border: 3px double darkred;
+	color: white;
+	border-radius: 5px;
+
+}
+
+.btn-card:hover {
+	background-color: white;
+	border: 3px solid darkred;
+	color: black;
+	transition: .9s;
+
+}
+
+/*==== about ===*/
+
+#about {
+	background: linear-gradient(to right bottom, #0f7764, rgb(10, 2, 59));
+	min-height: 100vh;
+	z-index: 1;
+	padding-bottom: 100px;
+}
+
+.bg {
+	background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+	margin: 25px 5px 100px 5px;
+	border-radius: 3px;
+	line-height: 1.25em;
+}
+
+/*==== contact ====*/
+
+#contact {
+	background: linear-gradient(to right top, #0f7764, rgb(10, 2, 59));
+	color: whitesmoke;
+	min-height: 100vh;
+
+
+
+}
+
+#contact p {
+	font-size: 1.5em;
+}
+
+.heading-underline-2 {
+	width: 2rem;
+	height: .10rem;
+	background-color: whitesmoke;
+	margin: 1.0rem auto;
+
+}
+
+/*=== footer ===*/
+
+footer {
+
+	background: linear-gradient(to right top, #053a30, rgb(6, 2, 34));
+	color: whitesmoke;
+}
+
+.soc:hover {
+	opacity: .6;
+	cursor: pointer;
+	transition: .5s;
+
+}
+
+/*============= MEDIA QUERIES =============*/
+
+
+
+
+@media (max-width: 767px) {
+	.caption {
+		color: whitesmoke;
+		top: 40%;
+		position: absolute;
+		text-align: center;
+	}
+
+	.card {
+		width: 90%;
+		margin: auto;
+	}
+	.bg{
+		width:90%;
+		margin:auto;
+	}
+
+	.mobile {
+		padding-bottom: 50px;
+	}
+	.navbar-brand h2{
+		font-size:1.25em;
+		padding-left:10px;
+	}
+}
