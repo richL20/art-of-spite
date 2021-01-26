@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 a {
@@ -162,7 +163,7 @@ header > .container {
 .hero-text h1 {
   font-family: 'IM Fell Double Pica', serif;
   color: whitesmoke;
-  animation: sink 1.65s ease-in;
+  animation: sink 1.65s ease;
   transition: opacity 1650ms;
 }
 
@@ -174,7 +175,7 @@ header > .container {
   color: whitesmoke;
   font-size: 20px;
   letter-spacing: 2px;
-  animation: sink 1.65s ease-in;
+  animation: sink 1.65s ease;
   transition: opacity 650ms;
 }
 
@@ -370,7 +371,7 @@ header > .container {
 @keyframes rise {
   0% {
     opacity: 0;
-    transform: translateY(25px)
+    transform: translateY(50px)
   }
 
   100% {
@@ -382,7 +383,7 @@ header > .container {
 @keyframes sink {
   0% {
     opacity: 0;
-    transform: translateY(-10px)
+    transform: translateY(-15px)
   }
 
   100% {
